@@ -1,6 +1,7 @@
 // lib/prisma.ts
-import { PrismaClient } from '@prisma/client'
+// import { PrismaClient } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg'
+import { PrismaClient } from '@prisma/client/scripts/default-index.js'
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined
